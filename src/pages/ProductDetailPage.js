@@ -8,7 +8,6 @@ function ProductDetailPage() {
             <NavBar>
                 <ProductDetail></ProductDetail>
             </NavBar>
-            <Footer></Footer>
         </div>
      );
 }

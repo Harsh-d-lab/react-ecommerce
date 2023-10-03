@@ -1,21 +1,4 @@
 import { Link } from 'react-router-dom';
-import { useSelector, useDispatch } from 'react-redux';
-import {
-  deleteItemFromCartAsync,
-  selectItems,
-  updateCartAsync,
-} from '../features/cart/cartSlice';
-import { Navigate } from 'react-router-dom';
-import { useForm } from 'react-hook-form';
-import { updateUserAsync } from '../features/user/userSlice';
-import { useState } from 'react';
-import {
-  createOrderAsync,
-  selectCurrentOrder,
-  selectStatus,
-} from '../features/order/orderSlice';
-import { selectUserInfo } from '../features/user/userSlice';
-import { Grid } from 'react-loader-spinner';
 
 function Checkout() {
   const dispatch = useDispatch();
